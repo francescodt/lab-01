@@ -1,0 +1,70 @@
+#a {
+    height: 100px;
+    width: 960px;
+}
+
+#b {
+    height: 600px;
+    width: 200px;
+    float: left;
+}
+
+#c, #d {
+    height: 200px;
+    width: 380px;
+    float: left;
+}
+
+#e, #f, #g, #h {
+    height: 250px;
+    width: 190px;
+    float: left;
+}
+
+#i {
+    height: 150px;
+    width: 760px;
+    float: right;
+}
+
+.floater, #wrapper {
+    float: right;
+}
+
+@media  (max-width: 768px) {
+    #a {
+        height: 75px;
+        width: 480px;
+    }
+    
+    #b {
+        height: 150px;
+        width: 480px;
+        float: left;
+    }
+    
+     #doingIt {
+        width: 480px;
+        height: 750px;
+        float: left;
+    }
+    
+    .floater {
+        width: 480px;
+        height: 125px;
+        float: left;
+    }
+    
+    #wrapper, #wrapper2 {
+        width: 240px;
+        height: 250px;
+        float: left;
+    }
+    
+    footer {
+        width: 480px;
+        height: 80px;
+        float: left;
+    }
+
+}
