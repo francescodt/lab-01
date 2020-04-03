@@ -1,70 +1,72 @@
-#a {
-    height: 100px;
-    width: 960px;
-}
-
-#b {
-    height: 600px;
-    width: 200px;
-    float: left;
-}
-
-#c, #d {
-    height: 200px;
-    width: 380px;
-    float: left;
-}
-
-#e, #f, #g, #h {
-    height: 250px;
-    width: 190px;
-    float: left;
-}
-
-#i {
-    height: 150px;
-    width: 760px;
-    float: right;
-}
-
-.floater, #wrapper {
-    float: right;
-}
-
-@media  (max-width: 768px) {
-    #a {
+@media (max-width: 479px) {
+    .a {
         height: 75px;
         width: 480px;
     }
-    
-    #b {
+
+    .b {
         height: 150px;
         width: 480px;
-        float: left;
-    }
-    
-     #doingIt {
-        width: 480px;
-        height: 750px;
-        float: left;
-    }
-    
-    .floater {
-        width: 480px;
-        height: 125px;
-        float: left;
-    }
-    
-    #wrapper, #wrapper2 {
-        width: 240px;
-        height: 250px;
-        float: left;
-    }
-    
-    footer {
-        width: 480px;
-        height: 80px;
-        float: left;
     }
 
+    .c, .d {
+        height: 125px;
+        width: 480px;
+    }
+
+    .e, .f, .g, .h {
+        height: 250px;
+        width: 240px;
+        display: inline-block;
+    }
+
+    .i {
+        height: 80px;
+        width: 480px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+      width: 960px;
+      display: flex;
+      grid-template-columns: 200px repeat(4, 190px);
+      grid-template-rows: 100px 200px 250px 150px;
+    }
+
+    .a {
+        /* height: 100px;
+        width: 960px; */
+        display: grid;
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+    }
+
+    .b {
+        /* height: 600px;
+        width: 200px; */
+        display: grid;
+        grid-column: 1 / 3;
+        grid-row: 2 / 5;
+    }
+
+    .c, .d {
+        /* height: 200px;
+        width: 380px; */
+        display: grid;
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .e, .f, .g, .h {
+        /* height: 250px;
+        width: 190px; */
+    }
+
+    .i {
+        /* height: 150px;
+        width: 760px; */
+
+    }
 }
